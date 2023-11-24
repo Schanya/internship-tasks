@@ -12,6 +12,14 @@ function findDuplicatesSlow(arr) {
     return duplicates;
 }
 
+function printPairs(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i; j < arr.length; j++) {
+            console.log(arr[i] + ' , ' + arr[j])
+        }
+    }
+}
+
 function findDuplicatesFast(arr) {
 
     const duplicates = [];
